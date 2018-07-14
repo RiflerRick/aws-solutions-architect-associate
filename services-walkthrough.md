@@ -1,6 +1,9 @@
 ### AWS Services in a nutshell
 
-- **Compute service**
+Here is a list of all aws services and what each one does in a nutshell. Not all the services listed here are relevant to the solutions architect associate exam.
+For the services which are infact relevant to the solutions architect associate exam, a small note is given on the side. 
+
+- **Compute service**(relevant)
     - EC2: virtual machines
     - EC2 container services: run and manage docker containers at scale
     - Elastic beanstalk: Elastic beanstalk is actually for people who do not understand aws. Here we can actually upload code and the service can handle the rest. So all a developer has to worry about is the code.
@@ -8,27 +11,27 @@
     - Lightsail: Its amazon's VPS service. This is again meant for people who do not want to understand anything regarding aws. 
     - Batch: This is used for batch computing
 
-- **Storage**
+- **Storage**(relevant)
     - S3: simple storage service. Object based storage.
     - EFS: Elastic file system. Network attached storage. This is essentially a volume that aws gives where we can store data and later mount that to multiple elastic compute machines.
     - Glacier: data archival, place to store the data for very cheap.
     - Snowball: way to bring in large amounts of data to the amazon data centers bascially physically, so rather than bringing in uploading data through the internet which might cost a lot of data, its better to write it into a disk and have to physically transferred. 
     - Storage Gateway: VMs that you can install in ur office and it would replicate information back to S3
    
-- **Databases**
+- **Databases**(relevant)
     - RDS: MySql, Postgresql, Aurora, Oracle, any relational dbs
     - DynamoDB: for non-relational databases
     - Elasticache: caching commonly queried from the database server. 
     - RedShift: Data warehousing or business intelligence. Used commonly for running really complex database queries.
 
-- **Migration**
+- **Migration**(relevant)
     - AWS Migration hub: Tracking service that allows us to track applications as we are migrating to a database.
     - Applications Discovery Service: It detects what applications you have and what their dependencies are
     - Database Migration Service: migrating database
     - Server Migration service: once again for migration. This time for migrating servers.
     - Snowball: snowball is actually service of both storage and migration.
 
-- **Networking and content delivery**
+- **Networking and content delivery**(relevant)
     - VPC: virtual private cloud. we can think of vpc as a virtual data center. we can configure firewalls and route tables and the like
     - CloudFront: amazon's content delivery network. A possible scenario of the usage of CloudFront could be that we have our videos, music and the like being stored in london and a user in australia would like to fetch these files. CloudFront would actually store these files closer to the user in an edge location so that it is loaded faster in the user's location
     - Route53: amazon's dns service
@@ -44,7 +47,7 @@
     - X-Ray: Analyze and debug serverless applications
     - Cloud9: IDE in the cloud
 
-- **Management Tools**
+- **Management Tools**(relevant)
     - CloudWatch: Monitoring service
     - CloudFormation: Its essentially a way of scripting infrastructure. So to give a scenario, for a infrastructure architect for instance, his/her job would be to go over and buy servers, load balancers, stack them, buy all the networking gear and properly attach them to be able to use them. CloudFormation essentially turns all that into code. 
     - CloudTrail: Used for logging all changes made in the aws environment 
@@ -53,7 +56,7 @@
     - Service Catalog: way of managing catalogs of it services.
     - Systems manager: managing aws resources. basically used for patch maintenance, say if we would like to roll out a security patch across a large number of ec2 instances, we can use this.
     - Trusted advisor: advise across multiple different disciplines. For instance, it will give us an idea of what ports are open and what not. 
-    - Managed services: aws managed services can help us out in case we do not want to worry about stuff like auto scaling and the like.
+    - Managed services: aws man aged services can help us out in case we do not want to worry about stuff like auto scaling and the like.
 
 - **Media Services**
     - Elastic Transcoder: A possible use case would be that whenever a video is uploaded, it would check how the video would look good on a mobile device and the like.
@@ -74,7 +77,7 @@
     - Amazon translate: machine translation service
     - amazon transcribe: for transcription: speech to text
 
-- **Analytics**
+- **Analytics**(relevant)
     - Athena: sql queries on s3 bucket. lets say we have a bunch of excel and csv files in our s3 bucket and we would like to know the name of all employees or the like we can actually use athena for doing that basically running an sql query in the s3 bucket.
     - EMR: elastic map reduce. big data map reduce obviously
     - CloudSearch: search services for aws
@@ -107,7 +110,7 @@
 
 - **AR/VR(Sumerian)**
 
-- **Application Integration**
+- **Application Integration**(relevant)
     - Step functions: Essentially managing different lamda functions and the steps to go through it.
     - Amazon MQ: message queues
     - SNS: notification service
@@ -124,7 +127,7 @@
     - Work docs: dropbox for aws. 
     - WorkMail: kind of like gmail
 
-- **Desktop and App streaming**
+- **Desktop and App streaming**(relevant)
     - Workspaces: We can have our actual os running in the cloud and we can connect from here. 
     - AppStream: streaming the actual application from the cloud
 
