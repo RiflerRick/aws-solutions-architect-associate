@@ -26,4 +26,31 @@
     - Applications Discovery Service: It detects what applications you have and what their dependencies are
     - Database Migration Service: migrating database
     - Server Migration service: once again for migration. This time for migrating servers.
-    - 
+    - Snowball: snowball is actually service of both storage and migration.
+
+- Networking and content delivery
+    - VPC: virtual private cloud. we can think of vpc as a virtual data center. we can configure firewalls and route tables and the like
+    - CloudFront: amazon's content delivery network. A possible scenario of the usage of CloudFront could be that we have our videos, music and the like being stored in london and a user in australia would like to fetch these files. CloudFront would actually store these files closer to the user in an edge location so that it is loaded faster in the user's location
+    - Route53: amazon's dns service
+    - API Gateway: Its a way of creating our own apis for other services to talk to
+    - Direct Connect: Way of running a dedicated line from our corporate head office or our data center directly into amazon. 
+
+- Developer Tools
+    - CodeStar: Project managing code.
+    - CodeCommit: Store code essentially
+    - CodeBuild: Compile the code, run tests against it and so on.
+    - CodeDeploy: Automates application deployments.
+    - CodePipeline: CD tool
+    - X-Ray: Analyze and debug serverless applications
+    - Cloud9: IDE in the cloud
+
+- Management Tools
+    - CloudWatch: Monitoring service
+    - CloudFormation: Its essentially a way of scripting infrastructure. So to give a scenario, for a infrastructure architect for instance, his/her job would be to go over and buy servers, load balancers, stack them, buy all the networking gear and properly attach them to be able to use them. CloudFormation essentially turns all that into code. 
+    - CloudTrail: Used for logging all changes made in the aws environment 
+    - Config: Monitors configuration changes across the aws env.
+    - OpsWorks: way of automating envs
+    - Service Catalog: way of managing catalogs of it services.
+    - Systems manager: managing aws resources. basically used for patch maintenance, say if we would like to roll out a security patch across a large number of ec2 instances, we can use this.
+    - Trusted advisor: advise across multiple different disciplines. For instance, it will give us an idea of what ports are open and what not. 
+    - Managed services: aws managed services can help us out in case we do not want to worry about stuff like auto scaling and the like.
