@@ -22,4 +22,8 @@
     - RedShift: Data warehousing or business intelligence. Used commonly for running really complex database queries.
 
 - Migration
-    - AWS Migration hub: 
+    - AWS Migration hub: Tracking service that allows us to track applications as we are migrating to a database.
+    - Applications Discovery Service: It detects what applications you have and what their dependencies are
+    - Database Migration Service: migrating database
+    - Server Migration service: once again for migration. This time for migrating servers.
+    - 
