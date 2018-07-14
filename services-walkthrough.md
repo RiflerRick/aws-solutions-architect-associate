@@ -54,3 +54,34 @@
     - Systems manager: managing aws resources. basically used for patch maintenance, say if we would like to roll out a security patch across a large number of ec2 instances, we can use this.
     - Trusted advisor: advise across multiple different disciplines. For instance, it will give us an idea of what ports are open and what not. 
     - Managed services: aws managed services can help us out in case we do not want to worry about stuff like auto scaling and the like.
+
+- Media Services
+    - Elastic Transcoder: A possible use case would be that whenever a video is uploaded, it would check how the video would look good on a mobile device and the like.
+    - MediaConvert: file based video transcoding service. allows us to create video on demand content for broadcast and multi screening at scale.
+    - MediaLive: creates high quality video streams for you to deliver to broadcase televisions. 
+    - MediaPackage: prepares and protects media
+    - MediaStore: optimized for media storage
+    - MediaTailer: targetted advertising into video streams
+
+- Machine Learning
+    - SageMaker: deep learning
+    - Comprehend: Sentiment analysis around data
+    - DeepLens: artifically aware camera.(physical device)
+    - Lex: AI chatbot
+    - Machine Learning: basic ML
+    - Polly: text to speech
+    - Rekognition: CV essentially, image, video
+    - Amazon translate: machine translation service
+    - amazon transcribe: for transcription: speech to text
+
+- Analytics
+    - Athena: sql queries on s3 bucket. lets say we have a bunch of excel and csv files in our s3 bucket and we would like to know the name of all employees or the like we can actually use athena for doing that basically running an sql query in the s3 bucket.
+    - EMR: elastic map reduce. big data map reduce obviously
+    - CloudSearch: search services for aws
+    - Elasticsearch service: elasticsearch service
+    - Kinesis: kinesis is a way of ingesting large amounts of data into aws. Things like social media feeds or tweets.
+    - Kinesis video streaming: lets say we have a whole bunch of people doing video streams. Kinesis allows us to ingest all that data and do processing on it.
+    - QuickSight: Amazon's business intelligence tool
+    - Data Pipeline: moving data between different services. 
+    - Glue: used for ETL(extract transform and load). basically for large amounts of data where we may be required to extract the data, transform it in the way we want to and load it.
+
